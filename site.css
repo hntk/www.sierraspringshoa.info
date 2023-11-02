@@ -1,0 +1,241 @@
+/* CSS Document */
+body {
+	background: #007f7f;
+}
+
+.main {
+	margin: auto;
+	background: white;
+	max-width: 1010px;
+	width: 60%;
+	height: auto !important;
+	min-height: 100%;
+	border-radius: 25px;	
+	z-index: 1;
+	position: relative;
+}
+
+.warning {
+	color: red;
+}
+#content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    height: auto !important;
+	min-height: 100%;
+	text-align: center;
+    font-weight: normal;
+}
+
+#iframe {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    min-height: 100%;
+	text-align: center;
+    font-weight: normal;
+	margin: 0px;
+	overflow: hidden;
+}
+
+/* Navbar*/
+nav {
+	overflow: hidden;
+	padding: 5px 5px;
+	z-index: 3;
+}
+
+nav > ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav > ul > li {
+	display: inline;
+	float: center;
+}
+
+/*Responsive Header*/
+.header {
+	overflow: hidden;
+	padding: 5px 5px;
+	z-index: 3;
+}
+
+/* Style the header links */
+.header a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 25px;
+	border-radius: 25px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 25px;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover, .subnav:hover .subnavbtn {
+	background-color: #ddd;
+	
+}
+
+/* Style the active/current link*/
+.header a.active {
+	background-color: #007f7f;
+	color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+	float: right;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1115px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.main #content .slideshow-container .mySlides img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+}
+h1 {
+    font-weight: normal;
+	font-size: 25px;
+}
+h2 {
+    color: #007f7f;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+h3 {
+    color: #000;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+p {
+	font-size: 15px;
+}
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #007f7f;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  width: 55%;
+}
+
+/* The Close Button */
+.close {
+  color: #fff;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hamburger {
+	display: none;
+}
+
+/*
+@media screen and (max-width: 1115px) {
+	.main {
+		margin: auto;
+		background: white;
+		max-width: 650px;
+		width: 95%;
+	}
+	.header {
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		width: 100%;
+	}
+	.header ul > li {
+		width: 100%;
+		display: none;
+	}
+	.hamburger {
+		display: inline-block;
+		cursor: pointer;
+		padding: 5px;
+		margin-right: 5px;
+		float: right;
+	}
+
+	.bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: #007f7f;
+		margin: 6px 0;
+		transition: 0.4s;
+	}
+
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+		transform: rotate(-45deg) translate(-9px, 6px);
+	}
+
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px);
+		transform: rotate(45deg) translate(-8px, -8px);
+	}
+}
+*/
